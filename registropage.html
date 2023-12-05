@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header-container">
+        <img src="gallery/logoprac001.jpeg" alt="Logo" class="img-fluid" id="div-logo-img" width="100">
+        <div id="divlogo">CADIA-MMORPG</div>
+        <img src="gallery/logoprac001.jpeg" alt="Logo" class="object-fit-contain border rounded" id="div-logo-img" width="100">
+      </header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="landingpage.html">INICIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeriapage.html">GALERIA</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+      <!-- Formulario de Registro de Armaduras -->
+  <div class="container my-5" id="form_armaduras">
+    <h2>Registro de Armaduras</h2>
+    <form>
+
+      <!-- Campo para Imagen -->
+      <div class="mb-3">
+        <label for="armaduraImagen" class="form-label">Imagen de Armadura</label>
+        <input type="file" class="form-control" id="armaduraImagen" aria-describedby="armaduraImagenTooltip">
+        <div id="armaduraImagenTooltip" class="form-text">Sube una imagen representativa de la armadura.</div>
+      </div>
+
+      <!-- Campo para Nombre -->
+      <div class="mb-3">
+        <label for="armaduraNombre" class="form-label">Nombre de Armadura</label>
+        <input type="text" class="form-control" id="armaduraNombre" aria-describedby="armaduraNombreTooltip">
+        <div id="armaduraNombreTooltip" class="form-text">Ingresa el nombre oficial de la armadura.</div>
+      </div>
+
+      <!-- Campo para Descripción -->
+      <div class="mb-3">
+        <label for="armaduraDescripcion" class="form-label">Descripción</label>
+        <textarea class="form-control" id="armaduraDescripcion" rows="3" aria-describedby="armaduraDescripcionTooltip"></textarea>
+        <div id="armaduraDescripcionTooltip" class="form-text">Proporciona una descripción detallada de la armadura.</div>
+      </div>
+
+      <!-- Botón de Envío -->
+      <button type="button" id="btnRegistrarArmadura" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Click para registrar armadura">
+        Registrar armadura
+      </button>
+
+    </form>
+  </div>
+
+      <table class="tabla-armaduras">
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="gallery/CatalogoPaladin.jpg" alt="Armadura de Paladin"></td>
+                <td>Armadura de Paladin</td>
+                <td>Esta armadura otorga resistencia y fortaleza.</td>
+            </tr>
+            <tr>
+                <td><img src="gallery/CatalogoWizard.jpg" alt="Armadura de Mago"></td>
+                <td>Armadura de Mago</td>
+                <td>Adecuada para quienes practican la magia.</td>
+            </tr>
+            <tr>
+                <td><img src="gallery/CatalogoWarrior.jpg" alt="Armadura de Guerrero"></td>
+                <td>Armadura de Guerrero</td>
+                <td>Para quienes prefieren la fuerza y el combate cuerpo a cuerpo.</td>
+            </tr>
+            <tr>
+                <td><img src="gallery/CatalogoWarlock.jpg" alt="Armadura de Brujo"></td>
+                <td>Armadura de Brujo</td>
+                <td>Para quienes prefieren la magia oscura.</td>
+            </tr>
+            <tr>
+                <td><img src="gallery/CatalogoDruid.jpg" alt="Armadura de Druida"></td>
+                <td>Armadura de Druida</td>
+                <td>Para quienes prefieren la naturaleza y la magia de la tierra.</td>
+            </tr>
+            <!-- ... Más ítems de armadura ... -->
+        </tbody>
+    </table>
+
+    </main>
+
+    <footer>
+        © 2023 CADIA-MMORPG - Todos los derechos reservados.
+    </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+  <script src="jquery-3.7.1.js"></script>
+  <script src="registrocatalogo.js"></script>
+</body>
+
+</html>
