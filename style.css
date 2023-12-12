@@ -1,0 +1,460 @@
+main {
+    background-color: darkolivegreen;
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #div-logo-img {
+    animation: fadeInDown 1s ease-out forwards;
+  }
+  
+  #divlogo {
+    animation: fadeIn 1.5s ease-out 0.5s forwards;
+  }
+  
+  /* Animación opcional que da la ilusión de que el texto está siendo escrito */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+  
+  #divlogo {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid black; /* El cursor al final del texto */
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+    letter-spacing: .15em; /* Ajusta el espacio entre letras */
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+   
+#div-logo {
+    width: 10vw;
+    height: auto;
+}
+
+
+/* CSS para reducir el tamaño de las cartas */
+.card-custom-size {
+    max-width: 250px; /* Ajusta el ancho máximo de la tarjeta */
+    margin: 10px; /* Margen alrededor de cada tarjeta */
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card-custom-size {
+        max-width: 200px;
+        margin: 5px;
+    }
+}
+
+.carousel-item img {
+    max-height: 750px;
+    object-fit: cover; /* Asegurar que las imágenes se escalan y centran correctamente */
+}
+
+#divlogo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 36px; /* Tamaño de la fuente */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra del texto para mejor legibilidad */
+}
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px; /* Espaciado alrededor del encabezado */
+    background-color: #333; /* Color de fondo del encabezado */
+}
+
+#news {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.news-item {
+    width: 49%; 
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #333;
+}
+
+.news-item img {
+    width: 15vh;
+    height: auto;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+ 
+
+.news-item p {
+    flex: 1;
+    font-size: 1em;
+    color: #666;
+}
+
+.news-item a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.news-item a:hover {
+    background-color: #0056b3;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 10;
+    background-color: rgb(45, 43, 47);
+    color: #f8f5f5;
+}
+footer a{
+    margin-left: 2%;
+    padding: 1%;
+    width: 15%;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 15px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+  color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espacio entre las imágenes */
+    padding: 2rem;
+}
+
+.imagen-galeria {
+    flex: 1 1 calc(25% - 2rem); /* Tomará el 25% del ancho del contenedor menos 2rem */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra opcional para las imágenes */
+    padding: 1rem;
+    border: 1px solid #ddd; /* Borde opcional */
+    transition: transform 0.3s; /* Efecto opcional para el hover */
+}
+
+.imagen-galeria:hover {
+    transform: scale(1.1); /* Efecto de escalar cuando pasas el cursor sobre la imagen */
+}
+
+.imagen-galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem; /* Espacio entre la imagen y su descripción */
+}
+
+.highlighted {
+    border: 5px solid #ffa500; /* Borde naranja para la imagen resaltada */
+    cursor: pointer;
+}
+
+/* CSS para el contenedor del carrito */
+#bodycatalogo {
+    background-color: #f7f7f7; /* Color de fondo claro */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffb320; /* Color de resaltado para el enlace activo */
+}
+
+.card {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Letras claras */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    border: none; /* Elimina el borde de las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+}
+
+
+
+.card:hover {
+    transform: scale(1.05); /* Efecto zoom */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Sombra más pronunciada */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+.card-title,
+.card-text,
+.card-footer {
+    color: #fff; /* Asegúrate que el texto sea claro */
+}
+
+.card-body,
+.card-footer {
+    background-color: #333; /* Asegúrate que el fondo de cada parte de la tarjeta sea oscuro */
+}
+
+/* Para que los enlaces y los botones también tengan un color que contraste bien: */
+.card .btn-primary {
+    background-color: #0062cc;
+    border-color: #005cbf;
+}
+
+.card .btn-primary:hover {
+    background-color: #004085;
+    border-color: #003766;
+}
+
+/* estilos offcanvas */
+body #offcanvasCarrito .offcanvas-body {
+    background-color: #343a40; /* Fondo oscuro para el offcanvas */
+    color: #fff; /* Texto claro */
+}
+
+body #offcanvasCarrito .offcanvas-header {
+    background-color: #218838;
+}
+
+body #offcanvasCarrito .offcanvas-header,
+body #offcanvasCarrito .offcanvas-title {
+    border-bottom: 1px solid #4b5258;
+    color: #fff;
+}
+
+body #offcanvasCarrito .btn-close {
+    filter: invert(1); /* Hace el botón de cierre blanco para que se destaque sobre fondo oscuro */
+}
+
+body #offcanvasCarrito .offcanvas-footer .btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+body #offcanvasCarrito .offcanvas-footer .btn:hover {
+    background-color: #218838;
+}
+
+body #offcanvasCarrito .modal-content {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Para el botón de comprar */
+body #boton-comprar {
+    background-color: #28a745; /* Verde para el botón de comprar */
+    color: #ffffff;
+}
+
+body #boton-comprar:hover {
+    background-color: #218838; /* Un verde más oscuro para el hover */
+}
+
+/* estilo modal */
+body .modal-content {
+    background-color: #343a40; /* Color de fondo */
+}
+
+body.modal-header,
+body.modal-footer {
+    border-color: #4b5258; /* Color de los bordes */
+}
+
+.modal-title,
+.modal-body,
+.modal-footer {
+    color: #fff; /* Color del texto */
+}
+
+.armadura-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.armadura-item {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.armadura-item:hover {
+    transform: scale(1.05);
+}
+
+.armadura-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.armadura-item h3 {
+    margin: 10px 0;
+    color: goldenrod;
+}
+
+.tabla-armaduras {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tabla-armaduras th, .tabla-armaduras td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tabla-armaduras th {
+    background-color: darkred;
+}
+
+.tabla-armaduras img {
+    max-width: 100px; /* o el tamaño que desees para las imágenes en la tabla */
+    height: auto;
+}
+
+.offcanvas-body .carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+
+/* Responsividad para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .tabla-armaduras, .tabla-armaduras thead, .tabla-armaduras tbody, .tabla-armaduras th, .tabla-armaduras td, .tabla-armaduras tr {
+        display: block;
+    }
+
+    .tabla-armaduras thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .tabla-armaduras tr {
+        margin: 0 0 1rem 0;
+    }
+    
+    .tabla-armaduras td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .tabla-armaduras td:before {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .tabla-armaduras td:nth-of-type(1):before { content: "Imagen"; }
+    .tabla-armaduras td:nth-of-type(2):before { content: "Nombre"; }
+    .tabla-armaduras td:nth-of-type(3):before { content: "Descripción"; }
+}
+
+@media screen and (max-width: 768px) {
+    .armadura-catalogo {
+        grid-template-columns: 1fr;
+    }
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+  }
+
+#form_armaduras {
+    background-color: #55ACEE;
+}

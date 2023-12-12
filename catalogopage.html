@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="bodycatalogo">
+  <header>
+    <header id="header-container">
+      <img src="gallery/logoprac001.jpeg" alt="Logo" class="img-fluid" id="div-logo-img" width="100">
+      <div id="divlogo">CADIA-MMORPG</div>
+      <img src="gallery/logoprac001.jpeg" alt="Logo" class="object-fit-contain border rounded" id="div-logo-img" width="100">
+    </header>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="landingpage.html">INICIO</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeriapage.html">GALERIA</a></li>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-success position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-controls="offcanvasCarrito">
+              compras
+              <span id="span1" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  0
+              </span>
+          </button>
+        </div>
+      </ul>
+    </div> 
+  </nav>
+  <main>
+    <div class="container py-5">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!--tarjeta de Paladin -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="gallery/CatalogoPaladin.jpg" class="card-img-top" alt="Armadura de Paladin">
+            <div class="card-body">
+              <h5 class="card-title">Armadura de Paladin</h5>
+              <p class="card-text">Esta armadura otorga resistencia y fortaleza.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Precio: $100</small>
+              <button class="btn btn-primary float-end comprar-btn" data-nombre="Armadura de Paladin" data-precio="100">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <!--tarjeta de mago -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="gallery/CatalogoWizard.jpg" class="card-img-top" alt="Armadura de Mago">
+            <div class="card-body">
+              <h5 class="card-title">Armadura de Mago</h5>
+              <p class="card-text">Adecuada para quienes practican la magia.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Precio: $90</small>
+              <button class="btn btn-primary float-end comprar-btn" data-nombre="Armadura de Mago" data-precio="90">Comprar</button> 
+            </div>  
+          </div>
+        </div>
+        <!--tarjeta de guerrero -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="gallery/CatalogoWarrior.jpg" class="card-img-top" alt="Armadura de Guerrero">
+            <div class="card-body">
+              <h5 class="card-title">Armadura de Guerrero</h5>
+              <p class="card-text">Para quienes prefieren la fuerza y el combate cuerpo a cuerpo.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Precio: $100</small>
+              <button class="btn btn-primary float-end comprar-btn" data-nombre="Armadura de Guerrero" data-precio="100">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <!--tarjeta de brujo -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="gallery/CatalogoWarlock.jpg" class="card-img-top" alt="Armadura de Brujo">
+            <div class="card-body">
+              <h5 class="card-title">Armadura de Brujo</h5>
+              <p class="card-text">Para quienes prefieren la magia oscura.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Precio: $125</small>
+              <button class="btn btn-primary float-end comprar-btn" data-nombre="Armadura de Brujo" data-precio="125">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <!--tarjeta de druida -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="gallery/CatalogoDruid.jpg" class="card-img-top" alt="Armadura de Druida">
+            <div class="card-body">
+              <h5 class="card-title">Armadura de Druida</h5>
+              <p class="card-text">Para quienes prefieren la naturaleza y la magia de la tierra.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Precio: $85</small>
+              <button class="btn btn-primary float-end comprar-btn" data-nombre="Armadura de Druida" data-precio="85">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <!--tarjeta de asesino -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="gallery/CatalogoAssassin.jpg" class="card-img-top" alt="Armadura de Asesino">
+            <div class="card-body">
+              <h5 class="card-title">Armadura de Asesino</h5>
+              <p class="card-text">Para quienes prefieren la agilidad y el sigilo.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Precio: $110</small>
+              <button class="btn btn-primary float-end comprar-btn" data-nombre="Armadura de Asesino" data-precio="110">Comprar</button>
+            </div>
+          </div>
+        </div> 
+        <!--tarjeta de valkiria -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="gallery/CatalogoValkyrie.jpg" class="card-img-top" alt="Armadura de Valkiria">
+            <div class="card-body">
+              <h5 class="card-title">Armadura de Valkiria</h5>
+              <p class="card-text">Para quienes prefieren la velocidad y la agilidad.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Precio: $95</small>
+              <button class="btn btn-primary float-end comprar-btn" data-nombre="Armadura de Valkiria" data-precio="95">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <!-- Repetir para los demás productos -->
+      </div>
+    </div>
+    
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarrito" aria-labelledby="offcanvasCarritoLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasCarritoLabel">Carrito de Compras</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!-- Aquí irán los ítems del carrito -->
+      <div id="carrito-items">
+        <!-- Los ítems del carrito se agregarán dinámicamente aquí -->
+      </div>
+      <div class="total-carrito mt-3">
+        Total: $<span id="carrito-total">0</span>
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-danger" id="vaciar-carrito">Vaciar Carrito</button>
+        <button class="btn" id="boton-comprar" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="modalCompraLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCompraLabel">Confirmar Compra</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Estás seguro de que quieres proceder con la compra?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer>
+    © 2023 CADIA-MMORPG - Todos los derechos reservados.
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="jquery-3.7.1.js"></script>
+  <script src="carrocompras.js"></script>
+</body>
+
+</html>
